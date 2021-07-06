@@ -1,6 +1,7 @@
 def read_letters(file_name):
     f = open(file_name)
     contents = f.read()
+    contents = contents.lower()
     i = 0
     output = []
     while i < len(contents):
